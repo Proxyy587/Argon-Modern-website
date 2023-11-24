@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;900&family=Syne:wght@400;500;600;700;800&display=swap");
+
+.steps {
+    margin-top: 10vh;
+    background: linear-gradient(to bottom, #ac00ac, #000);
+    display: flex;
+    justify-content: space-around;
+    height: 35vh;
+    gap: 40px;
+    backdrop-filter: blur(30px);
+  }
+  
+  .fourstep {
+    text-align: center;
+    padding: 20px;
+    width: 200px; 
+    color: #d801d8; 
+    position: relative; 
+  }
+  
+  .stepNumber {
+    display: block;
+    position: relative;
+    text-align: start;
+    z-index: 1;
+    margin: 20px;
+    font-size: 2em;
+    left: -20%;
+    /* top: 5%; */
+  }
+  
+  .stepNumber::after {
+    display: block;
+    content: attr(heading-number);
+    position: absolute;
+    z-index: -1; 
+    font-size: 3.5em;
+    top: -20px;
+    font-family: 'poppins';
+    left: 100%; 
+    transform: translateX(-50%); 
+    color: transparent; 
+    -webkit-text-stroke: 1px #cccccc61;
+  }
+  
+  .stepname {
+    font-size: 1.3em;
+    margin: 0;
+    color: #fff; 
+    position: relative;
+    left: -20%;
+  }
+  

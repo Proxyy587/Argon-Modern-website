@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;900&family=Syne:wght@400;500;600;700;800&display=swap');
+.hero {
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    padding: 5vh;
+  }
+  
+  .heroleft {
+    width: 50%;
+    /* max-width: 600px; */
+    padding: 50px;
+    /* position: relative; */
+  }
+  
+  .heroleft > h1 {
+    font-family: 'roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
+  
+  .heroleft > p {
+    width: 85%;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  
+  .heroright {
+    width: 50%; 
+    padding: 0 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: #000;
+    border-radius: 20px;
+    border: 2px solid #800080;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px 30px rgba(108, 0, 151, 0.8)
+  }
+  
+  .shopbtn {
+    /* position: relative; */
+    margin-top: 10px;
+    width: 100%; 
+    /* z-index: 2; */
+}
+
+
+.box{
+    width: 100%;
+    height: 90px;
+    margin-top: 20vh;
+    padding: 0 10vw;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 89px;
+    border-radius: 20px;
+    background-color: #212121;
+    border: 1px solid #800080;
+    box-shadow: 0px 0px 30px rgba(108, 0, 151, 0.8)
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    transition: all .6s ease;
+}
+
+.head i{
+    font-size: 1.8em;
+    margin-right: 8px;
+    color: #800080;
+}
+
+.head h2{
+    color: white;
+}
+
+.head:hover{
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.extra{
+  display: flex;
+  flex-direction: column;
+  margin:  15vh 20vh  10vh 20vh  ;
+  padding: 2vh 15vw;
+  color: #fff;
+  text-align: center;
+}
+
+.extraHeader{
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 900;
+}
+
+.subextra{
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
