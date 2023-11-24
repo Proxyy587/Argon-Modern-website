@@ -1,4 +1,11 @@
-emailjs.init("SUj4syiP82sF_eVOJ");
+// Replace these emailjs details
+
+var emailjs_public_api = "";
+var emailjs_template_api = "";
+var emailjs_template_api = "";
+
+
+emailjs.init("user_public_api");
 
 function sendEmail() {
   const formData = {
@@ -10,7 +17,7 @@ function sendEmail() {
   };
 
   // Send the email using Email.js
-  emailjs.send("service_sd8n2rj", "template_phb9r19", formData)
+  emailjs.send("emailjs_service_api", "emailjs_template_api", formData)
     .then(function(response) {
       console.log("Email sent successfully:", response);
       document.getElementById("status").innerHTML = "Message Sent";
