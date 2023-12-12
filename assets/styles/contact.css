@@ -164,3 +164,50 @@
 .footer a:hover{
   color: #e800e8;
 }
+
+.copyrightmobile{
+  display: none;
+  font-size: 0.8em;
+  margin-top: 5vh;
+  color: #ffffffb2;
+}
+
+.copyrightmobile a {
+  text-decoration: none;
+  color: #e23eff;
+}
+
+@media screen and (max-width: 1000px){
+  .copyright{
+    display: none;
+  }
+
+  .copyrightmobile{
+    display: block;
+  }
+
+  .footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .footerleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-center,
+  .footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-center{
+    margin-top: 2em;
+  }
+}

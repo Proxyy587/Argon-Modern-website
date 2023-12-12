@@ -1,11 +1,4 @@
-// Replace these emailjs details
-
-var emailjs_public_api = "";
-var emailjs_template_api = "";
-var emailjs_template_api = "";
-
-
-emailjs.init("user_public_api");
+emailjs.init("xU3wDjBmg9UKzqvrR");
 
 function sendEmail() {
   const formData = {
@@ -17,7 +10,7 @@ function sendEmail() {
   };
 
   // Send the email using Email.js
-  emailjs.send("emailjs_service_api", "emailjs_template_api", formData)
+  emailjs.send("service_d39qrg7", "template_mpjx6io", formData)
     .then(function(response) {
       console.log("Email sent successfully:", response);
       document.getElementById("status").innerHTML = "Message Sent";
@@ -29,5 +22,18 @@ function sendEmail() {
     });
 }
 
+function toggleAnswer(index) {
+  const answer = document.getElementById(`answer${index}`);
+  const question = document.getElementById(`question${index}`);
+  const plusMinusIcon = document.getElementById(`icon${index}`);
+
+  if (answer.style.display === 'block') {
+    answer.style.display = 'none';
+    plusMinusIcon.style.transform = 'rotate(0deg)';
+  } else {
+    answer.style.display = 'block';
+    plusMinusIcon.style.transform = 'rotate(45deg)';
+  }
+}
 
 
